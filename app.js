@@ -1,16 +1,10 @@
-//CommonJS, every file is module (by default)
-// Modules - Encapsulates Code (only share minimum // what we want)
+const http = require('http');
 
-const name = require('./4-names');
-const sayHI = require('./5-utils')
-// console.log(name)
-// console.log(sayHI)
-// sayHI('susan')
-// sayHI(name.john)
-// sayHI(name.peter)
+const server = http.createServer((req,res) => {
+    console.log('request event')
+    res.end('Hello World')
+})
 
-const data = require('./6-alternative_flavor')
-// console.log(data)
-
-require('./7-mind-grenade')
-
+server.listen(5000,()=>{
+    console.log('Server listening on port: 5000')
+})
