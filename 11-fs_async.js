@@ -1,5 +1,6 @@
 const {readFile, writeFile, writeFileSync} = require('fs')
 
+console.log('start')
 readFile('./content/first.txt', 'utf8', (err, result) => {
     if (err) {
         console.log(err)
@@ -9,9 +10,7 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
     readFile('./content/second.txt', 'utf8', (err, result) => {
         if (err) {
             console.log(err)
-            return
         }
-        console.log(result)
     })
     const second = result;
     writeFile(
@@ -21,7 +20,8 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
                 console.log(err)
                 return
             }
-            console.log(result)
+            console.log('done withe this task')
         }
     )
 })
+console.log('starting the next task')
