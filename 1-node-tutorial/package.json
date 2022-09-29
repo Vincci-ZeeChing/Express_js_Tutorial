@@ -1,10 +1,10 @@
 {
   "name": "express_js",
   "version": "1.0.0",
-  "main": "1-node-tutorial/1-intro.js",
+  "main": "1-intro.js",
   "scripts": {
-    "start": "node 1-node-tutorial/app.js",
-    "dev": "nodemon 1-node-tutorial/app.js"
+    "start": "node app.js",
+    "dev": "../node_modules/.bin/nodemon 1-node-tutorial/app.js"
   },
   "repository": {
     "type": "git",
