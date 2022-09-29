@@ -1,13 +1,14 @@
-****Node and Express Tutorial****
+# **Node and Express Tutorial**
 
-**Contents**
+### **Contents**
 1. Node Tutorial (✅)
 2. Express Tutorial 
 3. Task Manager (MongoDB, Mongoose)
 4. Store API
 5. JWT Basics
 6. Jobs API
-**Course Exclusive**
+
+### **Course Exclusive**
 7. File Upload (local and cloudinary)
 8. Send Email (nodemailer,ethereal and sendgrid )
 9. Stripe Payment
